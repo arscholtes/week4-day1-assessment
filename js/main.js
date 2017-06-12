@@ -168,10 +168,10 @@ The global variable should be 'prius'.
   var car = 'prius';
 
   function changeCar() {
-    car = 'beattle';
-    changeCar();
+  var car = 'beattle';
 
   }
+  changeCar();
 
 
   console.log( "global variable: ", car );
@@ -216,7 +216,6 @@ Where should 'multiply()' go?
   function hoistThis() {
     function multiply( sum ) {
       return sum * 2;
-      console.assert( sum * 2 == "8", "#9: Test failed. Check your function hoisting" );
 
     }
     multiply( sum );
